@@ -26,7 +26,7 @@ public class BishopBlackTest {
         BishopBlack black = new BishopBlack(Cell.C1);
         Cell[] cells = black.way(Cell.G5);
         Cell[] expect = {Cell.C1, Cell.D2, Cell.E3, Cell.F4, Cell.G5};
-        assertArrayEquals(expect,cells);
+        assertArrayEquals(expect, cells);
     }
 
     @Ignore
@@ -35,6 +35,6 @@ public class BishopBlackTest {
         BishopBlack black = new BishopBlack(Cell.C1);
         Cell[] cells = black.way(Cell.E2);
         Cell[] expect = {Cell.C1, Cell.E2};
-        assertArrayEquals(expect,cells);
+        assertArrayEquals(expect, cells);
     }
 }
