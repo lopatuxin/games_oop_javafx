@@ -25,7 +25,7 @@ public class BishopBlackTest {
     public void whenWayTrue() {
         BishopBlack black = new BishopBlack(Cell.C1);
         Cell[] cells = black.way(Cell.G5);
-        Cell[] expect = {Cell.C1, Cell.D2, Cell.E3, Cell.F4, Cell.G5};
+        Cell[] expect = {Cell.D2, Cell.E3, Cell.F4, Cell.G5};
         assertArrayEquals(expect, cells);
     }
 
