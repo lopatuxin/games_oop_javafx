@@ -1,6 +1,5 @@
 package ru.job4j.chess.firuges.black;
 
-import org.junit.Ignore;
 import org.junit.Test;
 import ru.job4j.chess.firuges.Cell;
 
@@ -29,7 +28,6 @@ public class BishopBlackTest {
         assertArrayEquals(expect, cells);
     }
 
-    @Ignore
     @Test
     public void whenWayFalse() {
         BishopBlack black = new BishopBlack(Cell.C1);
