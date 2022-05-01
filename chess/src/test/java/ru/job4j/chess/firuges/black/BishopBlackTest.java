@@ -1,6 +1,7 @@
 package ru.job4j.chess.firuges.black;
 
 import org.junit.Test;
+import ru.job4j.chess.ImpossibleMoveException;
 import ru.job4j.chess.firuges.Cell;
 
 import static org.junit.Assert.assertArrayEquals;
@@ -28,8 +29,9 @@ public class BishopBlackTest {
         assertArrayEquals(expect, cells);
     }
 
-    @Test
-    public void whenWayFalse() {
+    @Test(expected = ImpossibleMoveException.class)
+    public void whenWayFalse()
+        throws ImpossibleMoveException {
         BishopBlack black = new BishopBlack(Cell.C1);
         Cell[] cells = black.way(Cell.E2);
         Cell[] expect = {Cell.C1, Cell.E2};
